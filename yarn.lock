@@ -13,6 +13,44 @@
     "@aws-cdk/cx-api" "1.33.0"
     constructs "^3.0.0"
 
+"@aws-cdk/aws-events@1.33.0":
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-events/-/aws-events-1.33.0.tgz#282c06aba1b95e206d51d6dc1e7bce4dd1212f3d"
+  integrity sha512-vvBpENY4rmfrLL055BHdwkpA9/NsdMFU9NHdU6CcPkxrc1A4xYb5KXLqucjsnAMRdVhGtdGWVeLlI3i5UOYwNQ==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.33.0"
+    "@aws-cdk/core" "1.33.0"
+    constructs "^3.0.0"
+
+"@aws-cdk/aws-iam@1.33.0":
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.33.0.tgz#1f331364d6df6e63dc9de203e2ccf628d5078e5b"
+  integrity sha512-X92QwvDtTV7kn8ad8qwTaN+9qTT8xHnu6Jg8jMgqPKRyZ2F3lp4zAJLd9yZLV6+JEiUCNMQ/ebs0asgcRD/+lA==
+  dependencies:
+    "@aws-cdk/core" "1.33.0"
+    "@aws-cdk/region-info" "1.33.0"
+    constructs "^3.0.0"
+
+"@aws-cdk/aws-kms@1.33.0":
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.33.0.tgz#50f9991a0188691ddde0976fcd812573b05cb411"
+  integrity sha512-hziRNy3AFonVwCTCORbJl1JL7PCETISrY8V9aClZehNP3KmOE0EZWNyazNxTsPwVXI6gDyjEwhmU++TuwATZIw==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.33.0"
+    "@aws-cdk/core" "1.33.0"
+    constructs "^3.0.0"
+
+"@aws-cdk/aws-s3@1.33.0":
+  version "1.33.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-s3/-/aws-s3-1.33.0.tgz#83ed3003ae4595b367e0bb561baf848cd87fcab0"
+  integrity sha512-NagOU5TXy/KyZK3IwA8d0hFNafqW2ne7And0jlgbb/3mWfJTv9Qnbu/AqPFjL+C4pveJsRssZ1JwyZCLYLTBHA==
+  dependencies:
+    "@aws-cdk/aws-events" "1.33.0"
+    "@aws-cdk/aws-iam" "1.33.0"
+    "@aws-cdk/aws-kms" "1.33.0"
+    "@aws-cdk/core" "1.33.0"
+    constructs "^3.0.0"
+
 "@aws-cdk/cdk-assets-schema@1.33.0":
   version "1.33.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/cdk-assets-schema/-/cdk-assets-schema-1.33.0.tgz#37c5b393e4637ce666c73c92ace2e4481aea3781"
@@ -3193,6 +3231,11 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+
+prettier@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.4.tgz#2d1bae173e355996ee355ec9830a7a1ee05457ef"
+  integrity sha512-SVJIQ51spzFDvh4fIbCLvciiDMCrRhlN3mbZvv/+ycjvmF5E73bKdGfU8QDLNmjYJf+lsGnDBC4UUnvTe5OO0w==
 
 pretty-format@^25.2.1, pretty-format@^25.3.0:
   version "25.3.0"
