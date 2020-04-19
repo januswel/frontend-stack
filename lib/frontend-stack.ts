@@ -8,7 +8,12 @@ export class FrontendStack extends CDK.Stack {
   constructor(scope: CDK.Construct, id: string, props?: CDK.StackProps) {
     super(scope, id, props)
 
-    const appBucket = new S3.Bucket(this, `${PROJECT}-bucket`, {
+    const appBucket = new S3.Bucket(this, `${PROJECT}-app-bucket`, {
+      blockPublicAccess: S3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: CDK.RemovalPolicy.DESTROY,
+    })
+
+    const logBucket = new S3.Bucket(this, `${PROJECT}-log-bucket`, {
       blockPublicAccess: S3.BlockPublicAccess.BLOCK_ALL,
       removalPolicy: CDK.RemovalPolicy.DESTROY,
     })
@@ -17,6 +22,10 @@ export class FrontendStack extends CDK.Stack {
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, `${PROJECT}-distribution`, {
       priceClass: CloudFront.PriceClass.PRICE_CLASS_200,
+      loggingConfig: {
+        bucket: logBucket,
+        prefix: 'access-log/',
+      },
       originConfigs: [
         {
           s3OriginSource: {
