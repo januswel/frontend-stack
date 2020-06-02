@@ -46,5 +46,9 @@ export class FrontendStack extends CDK.Stack {
         },
       ],
     })
+
+    new CDK.CfnOutput(this, 'BucketName', {
+      value: appBucket.bucketName,
+    })
   }
 }
