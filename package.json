@@ -12,10 +12,10 @@
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.42.0",
+    "@aws-cdk/assert": "1.42.1",
     "@types/jest": "25.2.3",
     "@types/node": "12.12.42",
-    "aws-cdk": "1.42.0",
+    "aws-cdk": "1.42.1",
     "jest": "25.5.4",
     "prettier": "2.0.5",
     "ts-jest": "25.5.1",
@@ -23,9 +23,12 @@
     "typescript": "3.9.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-cloudfront": "1.42.0",
-    "@aws-cdk/aws-s3": "1.42.0",
-    "@aws-cdk/core": "1.42.0",
+    "@aws-cdk/aws-certificatemanager": "1.42.1",
+    "@aws-cdk/aws-cloudfront": "1.42.1",
+    "@aws-cdk/aws-route53": "1.42.1",
+    "@aws-cdk/aws-route53-targets": "1.42.1",
+    "@aws-cdk/aws-s3": "1.42.1",
+    "@aws-cdk/core": "1.42.1",
     "source-map-support": "0.5.19"
   }
 }
