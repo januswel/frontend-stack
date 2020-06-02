@@ -37,6 +37,14 @@ export class FrontendStack extends CDK.Stack {
           ],
         },
       ],
+      errorConfigurations: [
+        {
+          errorCode: 404,
+          responseCode: 200,
+          responsePagePath: '/index.html',
+          errorCachingMinTtl: 86400,
+        },
+      ],
     })
   }
 }
