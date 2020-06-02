@@ -23,6 +23,10 @@ describe('Frontend Stack', () => {
     expectCDK(stack).to(haveResource('AWS::S3::BucketPolicy'))
   })
 
+  it('has a hosted zone', () => {
+    expectCDK(stack).to(haveResource('AWS::Route53::HostedZone'))
+  })
+
   it('has an origin access identity to allow accesses from CloudFront to S3', () => {
     expectCDK(stack).to(
       haveResource('AWS::CloudFront::CloudFrontOriginAccessIdentity', {
